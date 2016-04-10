@@ -1,0 +1,83 @@
+body {
+	font-family: Helvetica;
+	margin: 0px;
+	background-color: #5e777d;
+}
+
+header {
+	background-color: #07272f;
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	padding: 15px;
+	z-index: 1;
+	text-align: center;
+	box-shadow: 0px 5px 5px #000000;
+}
+
+#mainContainer {
+	margin-top: 150px;
+}
+
+.inputLabel {
+	color: white;
+	margin-left: 33px;
+}
+
+#filterButton {
+	margin-top: 15px;
+	margin-left: 33px;
+	text-transform: uppercase;
+	border-radius: 3px;
+	background-color: white;
+	cursor: pointer;
+	outline: 0;
+}
+
+.movieContainer {
+	max-width: 700px;
+	margin: auto;
+	background-color: white;
+	padding: 15px;
+	margin-bottom: 33px;
+	overflow: auto;
+	position: relative;
+	opacity: 0.7;
+}
+
+.movieContainer:hover {
+	opacity: 1.0;
+	box-shadow: 5px 5px 5px #000000;
+
+}
+
+.moviePoster {
+	height: 300px;
+	float: left;
+	margin-right: 30px;
+}
+
+.removeButton {
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	opacity: 0.5;
+	cursor: pointer;
+	display: none;
+}
+
+.removeButton:hover {
+	opacity: 1.0;
+}
+
+.seeMoreDetails, .hideDetails {
+	cursor: pointer;
+}
+
+.seeMoreDetails:hover,  .hideDetails:hover{
+	text-decoration: underline;
+}
+
+.movieDetails, .hideDetails {
+	display: none;
+}

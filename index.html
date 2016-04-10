@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Movies</title>
+		<link rel="stylesheet" href="css/main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body>
+		
+		<header>
+			
+			<span class="inputLabel">Rating: </span>
+			<select id="ratingSelect">
+				<option value="all" selected>Any Rating</option>
+				<option value="PG">PG</option>
+				<option value="PG-13">PG-13</option>
+				<option value="R">R</option>
+			</select>
+			
+			<span class="inputLabel">Year: </span>
+			<select id="yearLowerBound">
+				<option value="0" selected>Lower Bound</option>
+				<option value="1990">1990</option>
+				<option value="1995">1995</option>
+				<option value="2000">2000</option>
+				<option value="2005">2005</option>
+				<option value="2010">2010</option>
+			</select>
+			<select id="yearUpperBound">
+				<option value="9999" selected>Upper Bound</option>
+				<option value="1995">1995</option>
+				<option value="2000">2000</option>
+				<option value="2005">2005</option>
+				<option value="2010">2010</option>
+				<option value="2016">2016</option>
+			</select>
+			
+			<span class="inputLabel">Runtime: </span>
+			<input id="runtimeLowerBound" type="text" placeholder="Lower Bound (minutes)">
+			<input id="runtimeUpperBound" type="text" placeholder="Upper Bound (minutes)">
+
+			<button id="filterButton">Filter</button>
+
+		</header>
+		
+		<div id="mainContainer">
+			
+			<div class="movieContainer" data-rating="R" data-year="1999" data-runtime="122">
+				<img class="removeButton" src="images/x.png">
+				<img class="moviePoster" src="images/movie1.jpg">
+				<h2 class="movieTitle">American Beauty</h2>
+				<p class="movieDescription">A bored suburban father has a mid-life crisis after becoming infatuated with his daughter's best friend.</p>
+				<h3 class="seeMoreDetails">See More Details...</h3>
+				<div class="movieDetails">
+					<b>Year: </b>1999<br><br>
+					<b>Rating: </b>R<br><br>
+					<b>Runtime: </b>2h 2min<br><br>
+				</div>
+				<h3 class="hideDetails">Hide Details</h3>
+			</div>
+
+			<div class="movieContainer" data-rating="R" data-year="1997" data-runtime="126">
+				<img class="removeButton" src="images/x.png">
+				<img class="moviePoster" src="images/movie2.jpg">
+				<h2 class="movieTitle">Good Will Hunting</h2>
+				<p class="movieDescription">Will Hunting, a janitor at M.I.T., has a gift for mathematics, but needs help from a psychologist to find direction in his life.</p>
+				<h3 class="seeMoreDetails">See More Details...</h3>
+				<div class="movieDetails">
+					<b>Year: </b>1997<br><br>
+					<b>Rating: </b>R<br><br>
+					<b>Runtime: </b>2h 6min<br><br>
+				</div>
+				<h3 class="hideDetails">Hide Details</h3>
+			</div>
+
+			<div class="movieContainer" data-rating="R" data-year="1999" data-runtime="89">
+				<img class="removeButton" src="images/x.png">
+				<img class="moviePoster" src="images/movie3.jpg">
+				<h2 class="movieTitle">Office Space</h2>
+				<p class="movieDescription">Three company workers who hate their jobs decide to rebel against their greedy boss.</p>
+				<h3 class="seeMoreDetails">See More Details...</h3>
+				<div class="movieDetails">
+					<b>Year: </b>1999<br><br>
+					<b>Rating: </b>R<br><br>
+					<b>Runtime: </b>1h 29min<br><br>
+				</div>
+				<h3 class="hideDetails">Hide Details</h3>
+			</div>
+
+			<div class="movieContainer" data-rating="R" data-year="2008" data-runtime="109">
+				<img class="removeButton" src="images/x.png">
+				<img class="moviePoster" src="images/movie4.jpg">
+				<h2 class="movieTitle">The Wrestler</h2>
+				<p class="movieDescription">A faded professional wrestler must retire, but finds his quest for a new life outside the ring a dispiriting struggle.</p>
+				<h3 class="seeMoreDetails">See More Details...</h3>
+				<div class="movieDetails">
+					<b>Year: </b>2008<br><br>
+					<b>Rating: </b>R<br><br>
+					<b>Runtime: </b>1h 49min<br><br>
+				</div>
+				<h3 class="hideDetails">Hide Details</h3>
+			</div>
+
+			<div class="movieContainer" data-rating="R" data-year="2013" data-runtime="96">
+				<img class="removeButton" src="images/x.png">
+				<img class="moviePoster" src="images/movie5.jpg">
+				<h2 class="movieTitle">Short Term 12</h2>
+				<p class="movieDescription">A 20-something supervising staff member of a residential treatment facility navigates the troubled waters of that world alongside her co-worker and longtime boyfriend.</p>
+				<h3 class="seeMoreDetails">See More Details...</h3>
+				<div class="movieDetails">
+					<b>Year: </b>2013<br><br>
+					<b>Rating: </b>R<br><br>
+					<b>Runtime: </b>1h 36min<br><br>
+				</div>
+				<h3 class="hideDetails">Hide Details</h3>
+			</div>
+
+			<div class="movieContainer" data-rating="PG-13" data-year="1994" data-runtime="107">
+				<img class="removeButton" src="images/x.png">
+				<img class="moviePoster" src="images/movie6.jpg">
+				<h2 class="movieTitle">Dumb and Dumber</h2>
+				<p class="movieDescription">A 20-something supervising staff member of a residential treatment facility navigates the troubled waters of that world alongside her co-worker and longtime boyfriend.</p>
+				<h3 class="seeMoreDetails">See More Details...</h3>
+				<div class="movieDetails">
+					<b>Year: </b>1994<br><br>
+					<b>Rating: </b>PG-13<br><br>
+					<b>Runtime: </b>1h 47min<br><br>
+				</div>
+				<h3 class="hideDetails">Hide Details</h3>
+			</div>
+
+			<div class="movieContainer" data-rating="R" data-year="2004" data-runtime="108">
+				<img class="removeButton" src="images/x.png">
+				<img class="moviePoster" src="images/movie7.jpg">
+				<h2 class="movieTitle">Eternal Sunshine of the Spotless Mind</h2>
+				<p class="movieDescription">When their relationship turns sour, a couple undergoes a procedure to have each other erased from their memories. But it is only through the process of loss that they discover what they had to begin with.</p>
+				<h3 class="seeMoreDetails">See More Details...</h3>
+				<div class="movieDetails">
+					<b>Year: </b>2004<br><br>
+					<b>Rating: </b>R<br><br>
+					<b>Runtime: </b>1h 48min<br><br>
+				</div>
+				<h3 class="hideDetails">Hide Details</h3>
+			</div>
+
+			<div class="movieContainer" data-rating="R" data-year="2010" data-runtime="112">
+				<img class="removeButton" src="images/x.png">
+				<img class="moviePoster" src="images/movie8.jpg">
+				<h2 class="movieTitle">Blue Valentine</h2>
+				<p class="movieDescription">The relationship of a contemporary married couple, charting their evolution over a span of years by cross-cutting between time periods.</p>
+				<h3 class="seeMoreDetails">See More Details...</h3>
+				<div class="movieDetails">
+					<b>Year: </b>2010<br><br>
+					<b>Rating: </b>R<br><br>
+					<b>Runtime: </b>1h 52min<br><br>
+				</div>
+				<h3 class="hideDetails">Hide Details</h3>
+			</div>
+
+			<div class="movieContainer" data-rating="PG" data-year="1998" data-runtime="103">
+				<img class="removeButton" src="images/x.png">
+				<img class="moviePoster" src="images/movie9.jpg">
+				<h2 class="movieTitle">The Truman Show</h2>
+				<p class="movieDescription">An insurance salesman/adjuster discovers his entire life is actually a T.V. show.</p>
+				<h3 class="seeMoreDetails">See More Details...</h3>
+				<div class="movieDetails">
+					<b>Year: </b>1998<br><br>
+					<b>Rating: </b>PG<br><br>
+					<b>Runtime: </b>1h 43min<br><br>
+				</div>
+				<h3 class="hideDetails">Hide Details</h3>
+			</div>
+
+			<div class="movieContainer" data-rating="R" data-year="2011" data-runtime="100">
+				<img class="removeButton" src="images/x.png">
+				<img class="moviePoster" src="images/movie10.jpg">
+				<h2 class="movieTitle">Drive</h2>
+				<p class="movieDescription">A mysterious Hollywood stuntman and mechanic moonlights as a getaway driver and finds himself trouble when he helps out his neighbor.</p>
+				<h3 class="seeMoreDetails">See More Details...</h3>
+				<div class="movieDetails">
+					<b>Year: </b>2011<br><br>
+					<b>Rating: </b>R<br><br>
+					<b>Runtime: </b>1h 40min<br><br>
+				</div>
+				<h3 class="hideDetails">Hide Details</h3>
+			</div>
+
+		</div>
+
+	</body>
+</html>

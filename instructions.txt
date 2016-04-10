@@ -1,0 +1,17 @@
+MOVIES ASSIGNMENT:
+
+	WEBSITE BEHAVIOR:
+	
+		-clicking on a “See More Details…” link should show that movie’s details
+		-clicking on a “Hide Details” link should hide that movie’s details
+		-when the user hovers over a movie container, the “removeButton” for that movie should appear
+		-when the user hovers away from a movie container, the “removeButton” for that movie should disappear
+		-if the user clicks on a movie’s “removeButton”, then that movie container should be removed
+		-clicking the “filter” button should filter the movie list based on the user’s search parameters
+		-if a user leaves either one of the runtime parameters blank or provides invalid input, that parameter
+		should not effect the search results
+	
+	NOTE:
+
+		This assignment is a tough one, but I promise you that it can be completed using nothing more
+		than the topics/methods that have been covered in our lecture slides. Good luck!
